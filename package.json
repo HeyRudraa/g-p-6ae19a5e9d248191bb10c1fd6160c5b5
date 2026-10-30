@@ -4,6 +4,9 @@
   "private": true,
   "workspaces": ["frontend"],
   "description": "Orbit learning workspace: classes, coding practice, and study tools.",
+  "overrides": {
+    "@grpc/grpc-js": "^1.14.5"
+  },
   "scripts": {
     "dev": "npm --workspace frontend run dev",
     "build": "npm --workspace frontend run build",

@@ -12,3 +12,5 @@ backend/var/
 .DS_Store
 coverage/
 dist/
+*.tsbuildinfo
+frontend/.next/
