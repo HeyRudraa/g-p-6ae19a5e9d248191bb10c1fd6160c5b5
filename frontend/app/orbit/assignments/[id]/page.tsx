@@ -1,0 +1,1 @@
+import AssignmentDetail from '@/features/assignments/AssignmentDetail';export default async function Page({params}:{params:Promise<{id:string}>}){const{id}=await params;return <AssignmentDetail id={id}/>}

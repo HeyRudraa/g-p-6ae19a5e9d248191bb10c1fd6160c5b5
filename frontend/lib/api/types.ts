@@ -1,0 +1,4 @@
+export type User = { id:string; email:string; username:string; display_name:string; avatar_id:'orbit'|'comet'|'sun'|'moon'|'leaf'|'spark'|'wave'|'star'; onboarding_completed:boolean };
+export type Classroom = { id:string; name:string; course_code:string; description:string|null; join_code?:string|null; member_role?:'student'|'teacher'|'class_admin'; student_count?:number };
+export type Assignment = { id:string; classroom_id:string; subject:string; title:string; instructions:string|null; assignment_type:string; points:number; due_at:string|null; auto_grade:boolean; questions:{id:string;prompt:string;choices:string[];points:number}[] };
+export type Grade = { assignment_id:string; assignment_title:string; classroom_name:string; points:number; score:number|null; feedback:string|null; returned_at:string|null };

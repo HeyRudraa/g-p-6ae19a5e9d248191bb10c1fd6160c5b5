@@ -1,0 +1,2 @@
+import AuthForm from '@/features/auth/AuthForm';
+export default function AuthPage({mode}:{mode:'login'|'signup'|'forgot'|'reset'|'verify'}) {return <main className="auth-wrap"><section className="auth-art"><a className="brand" href="/">orbit<i>.</i></a><div><span className="orbit-visual">◉</span><h1>One space to learn, teach, and grow.</h1><p>Bring your classes, practice, and study tools together in one calm workspace.</p></div><small>Made for curious minds.</small></section><section className="auth-panel"><AuthForm mode={mode}/></section></main>}
